@@ -1,12 +1,13 @@
 var mc{
-    // capture callback
+     // capture callback
     captureSuccess: function(mediaFiles) {
         var i, path, len;
         for (i = 0, len = mediaFiles.length; i < len; i += 1) {
             path = mediaFiles[i].fullPath;
-            $("#fotoTomada").html('<img src="' + path +'" width="100%"'>);
+            $("#fotoTomada").html('<img src="' + path +'" width="100%">');
             $("#fototomada").attr("rel", path);
         }
+       // navigator.notification.alert('Error code: OK', null, 'Capture Error');
     },
 
     // capture error callback
