@@ -42,7 +42,7 @@ var fn = {
         if(nom != "" && mail != "" && tel != "" && foto != undefined && foto != '')
             alert(nom + " - " + mail + " - " + tel);
         else
-            navigator.notification.alert("Todos los campos son requeridos.", null,"Registro","Acetar");
+            navigator.notification.alert("Todos los campos son requeridos.", null,"Registro","Aceptar");
         
     }
     
