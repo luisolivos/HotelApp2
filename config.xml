@@ -21,5 +21,4 @@
         
         <gap:plugin name="org.apache.cordova.dialogs" />
         <gap:plugin name="org.apache.cordova.media-capture" />
-cordova-plugin-dialogs
     </widget>
