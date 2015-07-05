@@ -5,7 +5,7 @@ var mc = {
         for (i = 0, len = mediaFiles.length; i < len; i += 1) {
             path = mediaFiles[i].fullPath;
             $("#fotoTomada").html('<img src="' + path +'" width="100%">');
-            $("#fototomada").attr("rel", path);
+            $("#fotoTomada").attr("rel", path);
             
             navigator.notification.alert('Error code: ' +  $("#fotoTomada").attr("rel"), null, 'Capture Error');
         }
