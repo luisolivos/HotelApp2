@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
     <widget xmlns = "http://www.w3.org/ns/widgets"
-
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "mx.cenet.hotelApp"
         version     = "1.0.0"
@@ -20,7 +19,7 @@
             pp
         </author>
         
-        <gap:plugin name="org.apache.cordova.dialogs" />
-        <gap:plugin name="org.apache.cordova.media-capture" />
+        <gap:plugin name = "com.phonegap.plugins.dialogs" />
+        <gap:plugin name = "com.phonegap.plugins.media-capture" />
 
     </widget>
