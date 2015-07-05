@@ -23,7 +23,7 @@ var fn = {
         
        // $("#reg div[data-role = footer] a").click(mc.start)//funcion como parámetro no lleva parentesis
         $("#reg div[data-role = footer] a").click(fn.registrarClick);
-        //$("#reg ul[data-role = listview] a").click(fn.registrarClick)
+        $("#reg ul[data-role = listview] a").click(mc.start);
     },
     
     deviceready: function(){
