@@ -7,7 +7,7 @@ var mc = {
             $("#fotoTomada").html('<img src="' + path +'" width="100%">');
             $("#fotoTomada").attr("rel", path);
             
-            navigator.notification.alert('Error code: ' +  $("#fotoTomada").attr("rel"), null, 'Capture Error');
+            //navigator.notification.alert('Error code: ' +  $("#fotoTomada").attr("rel"), null, 'Capture Error');
         }
        // navigator.notification.alert('Error code: OK', null, 'Capture Error');
     },
