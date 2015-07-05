@@ -1,4 +1,4 @@
-var mc{
+var mc = {
      // capture callback
     captureSuccess: function(mediaFiles) {
         var i, path, len;
