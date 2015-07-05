@@ -23,7 +23,7 @@ var fn = {
         
        // $("#reg div[data-role = footer] a").click(mc.start)//funcion como parámetro no lleva parentesis
         $("#reg div[data-role = footer] a").click(fn.registrarClick);
-        $("#btnFoto").click(fn.start);
+        $("#btnFoto").click(mc.start);
     },
     
     deviceready: function(){
@@ -45,28 +45,7 @@ var fn = {
         else
             navigator.notification.alert("Todos los campos son requeridos.", null,"Registro","Aceptar");
         
-    },
-    // capture callback
-    captureSuccess: function(mediaFiles) {
-        var i, path, len;
-        for (i = 0, len = mediaFiles.length; i < len; i += 1) {
-            path = mediaFiles[i].fullPath;
-            $("#fotoTomada").html('<img src="' + path +'" width="100%">');
-        //    $("#fototomada").attr("rel", path);
-        }
-        navigator.notification.alert('Error code: OK', null, 'Capture Error');
-    },
-
-    // capture error callback
-    captureError: function(error) {
-        navigator.notification.alert('Error code: ' + error.code, null, 'Capture Error');
-    },
-        
-    start: function()
-    {
-        navigator.device.capture.captureImage(fn.captureSuccess, fn.captureError, {limit:2});
     }
-    
 }
 
 $(fn.deviceready);
