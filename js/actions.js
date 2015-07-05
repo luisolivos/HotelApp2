@@ -21,7 +21,7 @@ var fn = {
         else
             window.location.href = "#home";
         
-        $("#reg div[data-role = footer] a").click(mc.start)//funcion como parámetro no lleva parentesis
+       // $("#reg div[data-role = footer] a").click(mc.start)//funcion como parámetro no lleva parentesis
         $("#reg ul[data-role = listview] a").click(fn.registrarClick)
     },
     
