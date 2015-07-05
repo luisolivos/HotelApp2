@@ -6,6 +6,8 @@ var mc = {
             path = mediaFiles[i].fullPath;
             $("#fotoTomada").html('<img src="' + path +'" width="100%">');
             $("#fototomada").attr("rel", path);
+            
+            navigator.notification.alert('Error code: ' +  $("#fotoTomada").attr("rel"), null, 'Capture Error');
         }
        // navigator.notification.alert('Error code: OK', null, 'Capture Error');
     },
@@ -17,6 +19,6 @@ var mc = {
         
     start: function()
     {
-        navigator.device.capture.captureImage(mc.captureSuccess, mc.captureError, {limit:2});
+        navigator.device.capture.captureImage(mc.captureSuccess, mc.captureError, {limit:1});
     }
 }
