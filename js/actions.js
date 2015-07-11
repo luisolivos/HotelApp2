@@ -41,7 +41,10 @@ var fn = {
         var foto = $("#fotoTomada").attr("rel");
         
         if(nom != "" && mail != "" && tel != "" && foto != undefined && foto != '')
-            alert(nom + " - " + mail + " - " + tel);
+        {
+           // alert(nom + " - " + mail + " - " + tel);
+            fn.enviarRegistro(nom, mail, tel, foto);
+        }
         else
             navigator.notification.alert("Todos los campos son requeridos.", null,"Registro","Aceptar");
         
