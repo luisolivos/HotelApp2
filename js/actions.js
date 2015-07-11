@@ -52,14 +52,14 @@ var fn = {
     
     enviarRegistro: function(nombre, mai, telefono, fotografia)
     {
-        $.ajax(
-        {
+        $.ajax({
           method: "POST",
           url: "http://carlos.igitsoft.com/apps/test.php",
-          data: { nom: nombre, mail = mai, tel: telefono  }
-          /*data:{parametroPHP: parametroJS}*/
-        }).done(function( msg ) 
-          {
+          data: { nom: nombre, mail: mai, tel: telefono  },
+          error: function(){
+              alert("ajax connection error");
+          }
+        }).done(function( msg ) {
             if(msg == 1){
                 fr.start(fotografia);
             }
