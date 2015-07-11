@@ -32,5 +32,5 @@ var ft = {
         var ft2 = new FileTransfer();
         ft2.upload(path, encodeURI("http://carlos.igitsoft.com/apps/test.php"), ft.win, ft.fail, options);
     }
-};
+}
 
