@@ -41,10 +41,29 @@ var fn = {
         var foto = $("#fotoTomada").attr("rel");
         
         if(nom != "" && mail != "" && tel != "" && foto != undefined && foto != '')
-            navigator.notification.alert(nom + " - " + mail + " - " + tel);
+            alert(nom + " - " + mail + " - " + tel);
         else
             navigator.notification.alert("Todos los campos son requeridos.", null,"Registro","Aceptar");
         
+    },
+    
+    enviarRegistro: function(nombre, mai, telefono, fotografia)
+    {
+        $.ajax(
+        {
+          method: "POST",
+          url: "http://carlos.igitsoft.com/apps/test.php",
+          data: { nom: nombre, mail = mai, tel: telefono  }
+          /*data:{parametroPHP: parametroJS}*/
+        }).done(function( msg ) 
+          {
+            if(msg == 1){
+                fr.start(fotografia);
+            }
+            else {
+                navigator.notification.alert("Error al enviar los datos", null, "Enviar datos", "Aceptar");
+            }
+          });
     }
 }
 
