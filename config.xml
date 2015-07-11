@@ -19,6 +19,8 @@
             pp
         </author>
         
+        <icon src="res/icon.png" <!--Cambia el icono de la apliación -->
+        
         <gap:plugin name="org.apache.cordova.dialogs" />
         <gap:plugin name="org.apache.cordova.media-capture" />        
         <gap:plugin name="org.apache.cordova.vibration" />
