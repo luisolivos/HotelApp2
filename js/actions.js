@@ -61,7 +61,6 @@ var fn = {
           }
         }).done(function( msg ) {
             if(msg == 1){
-                alert(fotografia);
                 fr.start(fotografia);
             }
             else {
