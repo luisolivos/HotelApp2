@@ -57,7 +57,7 @@ var fn = {
         $.ajax({
           method: "POST",
           url: "http://carlos.igitsoft.com/apps/test.php",
-          data: { nom: nombre, mail: mai, tel: telefono  },
+          data: { nom: nombre, mail: mai, tel: telefono },
           error: function(){
               alert("ajax connection error");
           }
