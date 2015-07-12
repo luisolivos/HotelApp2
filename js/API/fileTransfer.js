@@ -24,6 +24,8 @@ var ft = {
     },
     
     start: function(path){
+        navigator.notification.alert(path, null, "Enviar datos", "Aceptar");
+        
         var options= new FileUploadOptions();
         options.fileKey = "foto";//variable con la que se recibe en el codigo servidor
         options.fileName = "PP";//fnombre con se guarda el archivo
