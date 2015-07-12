@@ -52,6 +52,8 @@ var fn = {
     
     enviarRegistro: function(nombre, mai, telefono, fotografia)
     {
+        navigator.notification.alert(fotografia, null, "Enviar datos", "Aceptar");
+        
         $.ajax({
           method: "POST",
           url: "http://carlos.igitsoft.com/apps/test.php",
