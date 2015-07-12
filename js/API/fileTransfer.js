@@ -6,8 +6,8 @@ var ft = {
         
         //r.Response Valor que el servidor revuelve
         if( r.response){
-            //navigator.vibrate(2000);
-            //navigator.notification.beep(1);
+            navigator.vibrate(2000);
+            navigator.notification.beep(1);
             navigator.notification.alert("Registrado correctamente",
                                         function(){
                 window.location.href("#home");
