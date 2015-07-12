@@ -2,15 +2,15 @@
 
 var ft = {
     win: function (r) {
-        alert(r.response);
-        
         //r.Response Valor que el servidor revuelve
         if( r.response){
-            navigator.vibrate(2000);
-            navigator.notification.beep(1);
             navigator.notification.alert("Registrado correctamente",
                                         function(){
-                window.location.href("#home");
+                                            navigator.vibrate(2000);
+                                            navigator.notification.beep(1);
+                                             window.location.href("#home");
+                                             $.mobile.loading( "hide" );
+                                        }
             }, "Bienvenido", "Finalizar");
         }
         else{
@@ -26,8 +26,6 @@ var ft = {
     },
     
     start: function(path){
-        navigator.notification.alert(path, null, "Enviar datos", "Aceptar");
-        
         var options= new FileUploadOptions();
         options.fileKey = "foto";//variable con la que se recibe en el codigo servidor
         options.fileName = "PP";//fnombre con se guarda el archivo
