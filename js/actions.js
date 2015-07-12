@@ -35,6 +35,7 @@ var fn = {
     },
     
     registrarClick: function(){
+         $.mobile.loading( "show" );
         var nom  = $("#regNom").val();
         var mail = $("#regMail").val();
         var tel  = $("#regTel").val();
