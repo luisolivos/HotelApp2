@@ -61,7 +61,7 @@ var fn = {
           }
         }).done(function( msg ) {
             if(msg == 1){
-                fr.start(fotografia);
+                ft.start(fotografia);
             }
             else {
                 navigator.notification.alert("Error al enviar los datos", null, "Enviar datos", "Aceptar");
