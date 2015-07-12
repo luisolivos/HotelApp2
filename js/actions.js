@@ -61,6 +61,7 @@ var fn = {
           }
         }).done(function( msg ) {
             if(msg == 1){
+                alert(msg);
                 ft.start(fotografia);
             }
             else {
